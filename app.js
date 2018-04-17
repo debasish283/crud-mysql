@@ -2,7 +2,7 @@ var express = require('express')
 var app = express()
 
 var mysql = require('mysql')
- 
+
 /**
  * This middleware provides a consistent API
  * for MySQL connections during request/response life cycle
@@ -109,6 +109,6 @@ app.use(flash())
 app.use('/', index)
 app.use('/users', users)
 
-app.listen(3000, function(){
-    console.log('Server running at port 3000: http://127.0.0.1:3000')
+app.listen(6000, function(){
+    console.log('Server running at port 6000: http://127.0.0.1:6000')
 })
